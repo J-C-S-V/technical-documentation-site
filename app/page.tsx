@@ -1,4 +1,4 @@
-import { CardTechnologies } from "./_components/CardTechnologies";
+import { CardTechnologies } from "@/components/CardTechnologies";
 
 export default function Home() {
   return (

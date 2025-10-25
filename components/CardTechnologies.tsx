@@ -1,5 +1,5 @@
 import Link from "next/dist/client/link";
-import { HtmlIcon } from "../assets/Icons";
+import { HtmlIcon } from "../app/assets/Icons";
 
 export const CardTechnologies = () => {
   return (

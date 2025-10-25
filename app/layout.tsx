@@ -28,6 +28,7 @@ export default function RootLayout({
               <Link href="/password">Password</Link>
               <Link href="/sign-up">Sign Up</Link>
               <Link href="/products">Products</Link>
+              <Link href="/dashboard">Dashboard</Link>
             </ul>
           </nav>
         </header>
