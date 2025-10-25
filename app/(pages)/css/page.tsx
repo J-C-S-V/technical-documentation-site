@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "CSS Documentation Page",
+  title: {
+    absolute: "CSS",
+  },
   description: "Documentation page for CSS topics.",
 };
 

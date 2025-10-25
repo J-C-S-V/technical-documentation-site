@@ -1,9 +1,15 @@
-const Products = () => {
-  return (
-    <>
-      <h1 className="py-8 px-16 bg-blue-100">Products</h1>
-    </>
-  );
-};
+async function getDashboardData() {
+  await new Promise((resolve) => setTimeout(resolve, 2000));
+  return { stats: [1, 2, 3] };
+}
 
-export default Products;
+export default async function Products() {
+  const data = await getDashboardData();
+
+  return (
+    <div>
+      <h1>Products</h1>
+      <p>Your data: {JSON.stringify(data)}</p>
+    </div>
+  );
+}
