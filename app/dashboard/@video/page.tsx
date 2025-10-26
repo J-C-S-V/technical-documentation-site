@@ -1,7 +1,11 @@
+import { DashboardItemStyle } from "@/components/DashboardItemStyle";
+
 const Video = () => {
   return (
     <>
-      <h1>Video</h1>
+      <DashboardItemStyle>
+        <h1>Video</h1>
+      </DashboardItemStyle>
     </>
   );
 };

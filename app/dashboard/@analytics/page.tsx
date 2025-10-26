@@ -1,7 +1,11 @@
+import { DashboardItemStyle } from "@/components/DashboardItemStyle";
+
 const Analytics = () => {
   return (
     <>
-      <h1>Analytics</h1>
+      <DashboardItemStyle>
+        <h1>Analytics</h1>
+      </DashboardItemStyle>
     </>
   );
 };

@@ -1,7 +1,11 @@
+import { DashboardItemStyle } from "@/components/DashboardItemStyle";
+
 const Chat = () => {
   return (
     <>
-      <h1>Chat</h1>
+      <DashboardItemStyle>
+        <h1>Chat</h1>
+      </DashboardItemStyle>
     </>
   );
 };
