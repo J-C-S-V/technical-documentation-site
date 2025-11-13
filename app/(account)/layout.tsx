@@ -25,13 +25,21 @@ export default function TechLayout({
             <Link href="/" className="flex items-center gap-3 no-underline">
               <span
                 aria-hidden
-                className="brand-badge" style={{background: 'linear-gradient(45deg,#2563eb,#7c3aed)'}}
+                className="brand-badge"
+                style={{ background: "linear-gradient(45deg,#2563eb,#7c3aed)" }}
               />
-              <span className="font-semibold text-slate-900 dark:text-white">DocsKit</span>
+              <span className="font-semibold text-slate-900 dark:text-white">
+                DocsKit
+              </span>
             </Link>
 
             <nav className="flex items-center gap-4">
-              <Link href="/login" className="text-sm text-slate-600 dark:text-slate-300">Log in</Link>
+              <Link
+                href="/login"
+                className="text-sm text-slate-600 dark:text-slate-300"
+              >
+                Log in
+              </Link>
               <Link
                 href="/sign-up"
                 className="inline-flex items-center px-3 py-1.5 bg-[color:var(--color-accent)] text-white text-sm rounded-md shadow-sm"
@@ -49,7 +57,9 @@ export default function TechLayout({
         </main>
 
         <footer className="w-full border-t border-slate-200/60 dark:border-slate-800/50 py-6">
-          <div className="container text-sm text-slate-600 dark:text-slate-400">© {new Date().getFullYear()} DocsKit. All rights reserved.</div>
+          <div className="container text-sm text-slate-600 dark:text-slate-400">
+            © {new Date().getFullYear()} DocsKit. All rights reserved.
+          </div>
         </footer>
       </body>
     </html>
