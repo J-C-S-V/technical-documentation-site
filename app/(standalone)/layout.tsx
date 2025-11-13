@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "../globals.css";
-import Link from "next/link";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 
 export const metadata: Metadata = {
   title: {
@@ -19,21 +20,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
-        <header className="flex w-full bg-red-200">
-          <nav>
-            <ul>
-              <Link href="/">Home</Link>
-              <Link href="/login">Login</Link>
-              <Link href="/password">Password</Link>
-              <Link href="/sign-up">Sign Up</Link>
-              <Link href="/products">Products</Link>
-              <Link href="/dashboard">Dashboard</Link>
-            </ul>
-          </nav>
-        </header>
-        <main className="flex flex-col h-full flex-grow">{children}</main>
-        <footer className="flex w-full bg-red-200">Footer</footer>
+      <body className="antialiased min-h-screen bg-[color:var(--color-bg)] text-[color:var(--color-foreground)]">
+        <Header />
+
+        <main className="flex-grow py-12">
+          <div className="container">
+            <div className="card">{children}</div>
+          </div>
+        </main>
+
+        <Footer />
       </body>
     </html>
   );

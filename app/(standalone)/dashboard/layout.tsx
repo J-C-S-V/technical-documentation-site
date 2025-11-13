@@ -1,3 +1,6 @@
+import Header from "../../../components/Header";
+import Footer from "../../../components/Footer";
+
 const DashboardLayout = ({
   children,
   analytics,
@@ -11,12 +14,18 @@ const DashboardLayout = ({
 }) => {
   return (
     <>
-      <header>Dashboard Header</header>
-      <div>{children}</div>
-      <div>{analytics}</div>
-      <div>{chat}</div>
-      <div>{video}</div>
-      <footer>Dashboard Footer</footer>
+      <Header />
+      <main className="flex-grow py-12">
+        <div className="container">
+          <div className="card">{children}</div>
+        </div>
+      </main>
+
+      <div className="container mt-6">{analytics}</div>
+      <div className="container mt-4">{chat}</div>
+      <div className="container mt-4">{video}</div>
+
+      <Footer />
     </>
   );
 };

@@ -1,3 +1,6 @@
+import Header from "../../../components/Header";
+import Footer from "../../../components/Footer";
+
 export default function BlogLayout({
   children,
 }: Readonly<{
@@ -5,9 +8,13 @@ export default function BlogLayout({
 }>) {
   return (
     <>
-      <header className="flex w-full bg-red-200">Blog header</header>
-      <main className="flex flex-col h-full flex-grow">{children}</main>
-      <footer className="flex w-full bg-green-200">Blog footer</footer>
+      <Header />
+      <main className="flex-grow py-12">
+        <div className="container">
+          <div className="card">{children}</div>
+        </div>
+      </main>
+      <Footer />
     </>
   );
 }
