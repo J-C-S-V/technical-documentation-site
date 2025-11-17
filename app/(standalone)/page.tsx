@@ -6,7 +6,6 @@ export default function Home() {
       <h1 className="py-8 px-16 bg-blue-100">Technical Documentation Site</h1>
       <div className="flex flex-col gap-4 mt-auto bg-red-100 py-4 px-16">
         <CardTechnologies />
-        <CardTechnologies />
       </div>
     </div>
   );

@@ -15,9 +15,7 @@ export const metadata: Metadata = {
 
 export default function TechLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
       <body className="antialiased min-h-screen bg-[color:var(--color-bg)] text-[color:var(--color-foreground)]">
