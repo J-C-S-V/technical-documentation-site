@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="antialiased min-h-screen bg-[color:var(--color-bg)] text-[color:var(--color-foreground)]">
         <Header />
-
+        <h1>standalone layout</h1>
         <main className="flex-grow py-12">
           <div className="container">
             <div className="card">{children}</div>
