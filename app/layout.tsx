@@ -9,7 +9,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${montserrat.className} antialiased`}>{children}</body>
+      <body className={`${montserrat.className} antialiased`}>
+        {children}
+        <footer className="flex justify-center">Made with ❤️ by Juan</footer>
+      </body>
     </html>
   );
 }
